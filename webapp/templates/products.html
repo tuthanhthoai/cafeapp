@@ -1,0 +1,29 @@
+{% extends 'base/master.html' %}
+
+{% block body %}
+<div class="container pt-3">
+    <h1 class="subject text-center">{{ category_name }}</h1>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th></th>
+            <th>Tên sản phẩm</th>
+            <th>Giá (VNĐ)</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for p in products %}
+        {% if p.category.id == category_id %}
+        <tr>
+            <td><img src="{{ url_for('static', filename=p.image) }}"
+                     style="width:50px;height:auto">
+            </td>
+            <td>{{p.name}}</td>
+            <td>{{p.price}}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

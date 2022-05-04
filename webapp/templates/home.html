@@ -1,0 +1,100 @@
+{% extends 'base/master.html' %}
+
+{% block body %}
+
+<div class="container-fluid">
+    <img src="static/image/home_page/wall_paper.jpg" style="width: 100%">
+</div>
+
+<div class="container-fluid pt-3">
+    <h1 class="text-center"><b>Danh Mục Sản Phẩm</b></h1>
+</div>
+
+<div class="container-fluid">
+    <div class="carousel slide" data-ride="carousel" id="carouselExampleControls">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <a href="/Tra-hoa-qua">
+                    <img alt="Trà hoa quả"
+                         class="img-thumbnail"
+                         src="http://emlanha.com/wp-content/uploads/2019/12/cach-pha-tra-trai-cay-nhiet-doi.jpg"
+                         style="width:50%;height:400px;display:block;margin-left: auto;margin-right: auto">
+                </a>
+                <h2 class="container well text-center" style="width:50%"><a href="/Tra-hoa-qua">Trà hoa quả</a></h2>
+            </div>
+
+            <div class="carousel-item">
+                <a href="/Ca-phe">
+                    <img alt="Cà phê"
+                         class="img-thumbnail"
+                         src="https://cdn.tgdd.vn/2021/02/CookProduct/Untitled-1-1200x676-4.jpg"
+                         style="width:50%;height:400px;display:block;margin-left: auto;margin-right: auto">
+                </a>
+                <h2 class="container well text-center" style="width:50%"><a href="/Ca-phe">Cà phê</a></h2>
+            </div>
+
+            <div class="carousel-item">
+                <a href="/Tra-sua">
+                    <img alt="Trà sữa"
+                         class="img-thumbnail"
+                         src="https://cdn.tgdd.vn/Files/2021/08/10/1374160/hoc-cach-pha-tra-sua-o-long-dai-loan-thom-ngon-chuan-vi-ai-cung-me-202108100039248020.jpg"
+                         style="width:50%;height:400px;display:block;margin-left: auto;margin-right: auto">
+                </a>
+                <h2 class="container well text-center" style="width:50%"><a href="/Tra-sua">Trà sữa</a></h2>
+            </div>
+
+            <div class="carousel-item">
+                <a href="/Smoothies">
+                    <img alt="Smoothies"
+                         class="img-thumbnail"
+                         src="https://cdn.tgdd.vn/Files/2022/02/15/1415678/che-do-an-kieng-smoothie-la-gi-nguon-goc-va-cach-thuc-hien-202202151101265848.jpg"
+                         style="width:50%;height:400px;display:block;margin-left: auto;margin-right: auto">
+                </a>
+                <h2 class="container well text-center" style="width:50%"><a href="/Smoothies">Smoothies</a></h2>
+            </div>
+
+            <div class="carousel-item">
+                <a href="/Nuoc-ep">
+                    <img alt="Nước ép"
+                         class="img-thumbnail"
+                         src="https://hoaquafuji.com/storage/app/media/NEWS/12-nuoc-ep-cho-tre.jpg"
+                         style="width:50%;height:400px;display:block;margin-left: auto;margin-right: auto">
+                </a>
+                <h2 class="container well text-center" style="width:50%"><a href="/Nuoc-ep">Nước ép</a></h2>
+            </div>
+
+            <div class="carousel-item">
+                <a href="Cocktail">
+                    <img alt="Cocktail"
+                         class="img-thumbnail"
+                         src="https://themillennials.life/wp-content/uploads/2020/11/cocktial-1.jpg"
+                         style="width:50%;height:400px;display:block;margin-left: auto;margin-right: auto">
+                </a>
+                <h2 class="container well text-center" style="width:50%"><a href="/Cocktail">Cocktail</a></h2>
+            </div>
+
+            <div class="carousel-item">
+                <a href="/Banh-ngot">
+                    <img alt="Bánh ngọt"
+                         class="img-thumbnail"
+                         src="https://ngonviet247.com/wp-content/uploads/2019/01/Mo-Cua-Hang-Banh-Ngot.jpg"
+                         style="width:50%;height:400px;display:block;margin-left: auto;margin-right: auto">
+                </a>
+                <h2 class="container well text-center" style="width:50%"><a href="/Banh-ngot">Bánh ngọt</a></h2>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleControls" role="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" data-slide="next" href="#carouselExampleControls" role="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+{% endblock %}

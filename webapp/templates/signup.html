@@ -1,0 +1,42 @@
+{% extends 'base/master.html' %}
+
+{% block body %}
+{% if err_msg %}
+<h4> {{ err_msg }} </h4>
+{% endif %}
+<div class="container pt-5">
+    <h1 class="sig text-center">SIGN UP</h1>
+    <div class="con">
+        <form method="post" action="{{ url_for('signup') }}">
+            <div class="form-group">
+                <label for="name"> Your name </label>
+                <input type="text" class="form-control" id="name" name="name" required/>
+            </div>
+            <div class="form-group">
+                <label for="name"> Email </label>
+                <input type="email" class="form-control" id="email" name="email" required/>
+            </div>
+            <div class="form-group">
+                <label for="name"> Phone number </label>
+                <input type="text" class="form-control" id="phone" name="phone_number" required/>
+            </div>
+            <div class="form-group">
+                <label for="username"> Username </label>
+                <input type="text" class="form-control" id="username" name="username" required/>
+            </div>
+            <div class="form-group">
+                <label for="password"> Password </label>
+                <input type="password" class="form-control" id="password" name="password" required/>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password"> Confirm password </label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password" required/>
+            </div>
+            <div class="con2">
+                <input type="submit" value="Sign up" class="btn btn-danger" style="text-align:center;"/>
+                <p class="message">Already registered? <a href="/signin">Sign In</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
